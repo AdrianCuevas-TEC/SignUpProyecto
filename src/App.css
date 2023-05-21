@@ -1,38 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fdeddc;
+}
+
+.color-overlay {
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 #0003;
+  background-color: #FBD4AB;
+  padding: 50px;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  width: 300px;
+  height: auto;
+  margin-bottom: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-container {
+  
+  text-align: center;
+  margin-bottom: 16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-input {
+  margin-top: 8px;
+}
+
+.form-group {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-right: 16px;
+  grid-gap: 11px;
+  margin-bottom: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.form-group label {
+  margin-bottom: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-inline {
+  display: flex;
 }
+
+.message {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  background-color: #FBD4AB;
+  padding: 8px 16px;
+  border-radius: 5px;
+  color: #000;
+  font-family: 'Lexend', sans-serif;
+  font-size: 14px;
+}
+
+
+.lexend {
+  font-family: 'Lexend', sans-serif;
+  margin-bottom: 4px;
+}
+
